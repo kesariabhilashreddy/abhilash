@@ -1,0 +1,6 @@
+---
+- hosts  : all
+  become : true
+  tasks:
+   - name = this is my service
+     yum  = name=httpd state=present
